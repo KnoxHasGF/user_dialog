@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>User List</h1>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Fullname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="userRows">
+            </tbody>
+        </table>
+    </div>
+
+    <button id="newUserBtn" class="blue-btn">New User</button>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h2>New User</h2>
+                <span id="closeModal" class="close-btn">×</span>
+            </div>
+
+            <form id="userForm">
+                <label>Username</label>
+                <input type="text" id="username" required>
+
+                <label>Fullname</label>
+                <input type="text" id="fullname" required>
+
+                <label>Email</label>
+                <input type="email" id="email" required>
+
+                <button type="submit" class="green-btn">Add User</button>
+            </form>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
